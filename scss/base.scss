@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/*
+	@theme Dusk
+	@override-placeholders html, xml, css, sourcecode.js, php
+	@version 0.1.0
+	@author enderlinp
+*/
+@import "syntax-variables.scss";
+
+:document-base {
+  color: $syntax-text-color;
+  background-color: $syntax-background-color;
+  insertion-point-color: $syntax-cursor-color;
+  selection-background-color: $syntax-selection-color;
+  current-line-background-color: $syntax-background-color;
+}
+
+sourcecode, source, tag, css, js, php {
+  spell-check: disabled;
+}
+
+attribute-name {
+	color: $blue-dark;	
+}
+
+attribute-value {
+	color: $red;
+}
+
+class {
+	&.definition {
+		name {
+			color: $blue;
+		}
+	}
+}
+comment {
+	color: $gray;
+}
+
+constant {
+	color: $white;
+	
+	&.character.escape {
+		color: $red;
+	}
+	
+	&.language {
+		color: $pink;
+	}
+	
+	&.numeric {
+		color: $purple;
+	}
+}
+
+delimiter.source {
+	color: $red-light;
+	
+	keyword.definition {
+		color: $red-light;
+	}	
+}
+
+keyword {
+	color: $pink;
+	
+	comment.block.documentation & {
+		color: $gray
+	}
+	
+	&.control {
+		color: $pink;
+	}
+	
+	&.important {
+		color: $blue;
+	}
+	
+	&.language.function {
+		color: $pink;
+	}
+	
+	&.storage.type {
+		color: $pink;	
+	}
+	
+	&.variable {
+		color: $blue;
+	}
+}
+
+operator {
+	color: $white;
+}
+
+property-name {
+	color: $pink;	
+}
+
+property-value {
+	color: $white;	
+	
+	keyword.other.unit {
+		color: $purple;
+	}
+}
+
+string {
+	color: $red;
+}
+
+support.variable.built-in {
+	color: $pink;
+}
+
+tag {
+	color: $pink;
+	
+	&.doctype {
+		color: $brown;
+	}
+	
+	punctuation.separator.attribute {
+		color: $blue-dark;
+	}
+} 
+
+variable {
+	color: $blue;
+	
+	&.class {
+		color: $pink;
+		
+		&.parent {
+			color: $white;
+		}
+	}
+	
+	&.function {
+		color: $pink;
+		
+		&.method {
+			color: $blue-dark;	
+		}
+	}
+	
+	&.property {
+		color: $blue-dark;
+	}
+}
+
+/* CSS */
+css {
+	&.selector {
+		color: $pink;
+	}
+	
+	comment {
+		color: $green-dark;
+	}
+	constant.rgb-value {
+		color: $purple;	
+	}
+	
+	pseudo-class {
+		color: $white;
+	}
+}
+
+/* JS */
+js {
+	keyword {
+		&.variable.language {
+			color: $pink;
+		}
+	}
+}
+
+/* JSON */
+json {
+	x-assignment {
+		string.quoted {
+			color: $pink;
+		}
+	}
+}
+
+/* PHP */
+
+embedded.php {
+	punctuation {
+		&.brace, &.x-semicolon {
+			color: $white;
+		}
+		
+	}
+	
+	operator.logical {
+		color: $pink;
+	}
+	
+	variable.function {
+		color: $white;
+		
+		&.method {
+			color: $blue-dark;
+		}
+	}
+}

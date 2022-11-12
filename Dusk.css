@@ -1,0 +1,165 @@
+/*
+	@theme Dusk
+	@override-placeholders html, xml, css, sourcecode.js, php
+	@version 0.1.0
+	@author enderlinp
+*/
+:document-base {
+  color: #ffffff;
+  background-color: #2b2e38;
+  insertion-point-color: #ffffff;
+  selection-background-color: #4a4d55;
+  current-line-background-color: #2b2e38;
+}
+
+sourcecode, source, tag, css, js, php {
+  spell-check: disabled;
+}
+
+attribute-name {
+  color: #7b99a1;
+}
+
+attribute-value {
+  color: #ea5d5e;
+}
+
+class.definition name {
+  color: #00bcd3;
+}
+
+comment {
+  color: #60c66e;
+}
+
+constant {
+  color: #ffffff;
+}
+constant.character.escape {
+  color: #ea5d5e;
+}
+constant.language {
+  color: #ce54a9;
+}
+constant.numeric {
+  color: #9a97d3;
+}
+
+delimiter.source {
+  color: #dba071;
+}
+delimiter.source keyword.definition {
+  color: #dba071;
+}
+
+keyword {
+  color: #ce54a9;
+}
+comment.block.documentation keyword {
+  color: #60c66e;
+}
+keyword.control {
+  color: #ce54a9;
+}
+keyword.important {
+  color: #00bcd3;
+}
+keyword.language.function {
+  color: #ce54a9;
+}
+keyword.storage.type {
+  color: #ce54a9;
+}
+keyword.variable {
+  color: #00bcd3;
+}
+
+operator {
+  color: #ffffff;
+}
+
+property-name {
+  color: #ce54a9;
+}
+
+property-value {
+  color: #ffffff;
+}
+property-value keyword.other.unit {
+  color: #9a97d3;
+}
+
+string {
+  color: #ea5d5e;
+}
+
+support.variable.built-in {
+  color: #ce54a9;
+}
+
+tag {
+  color: #ce54a9;
+}
+tag.doctype {
+  color: #dba071;
+}
+tag punctuation.separator.attribute {
+  color: #7b99a1;
+}
+
+variable {
+  color: #00bcd3;
+}
+variable.class {
+  color: #ce54a9;
+}
+variable.class.parent {
+  color: #ffffff;
+}
+variable.function {
+  color: #ce54a9;
+}
+variable.function.method {
+  color: #7b99a1;
+}
+variable.property {
+  color: #7b99a1;
+}
+
+/* CSS */
+css.selector {
+  color: #ce54a9;
+}
+css comment {
+  color: #57b565;
+}
+css constant.rgb-value {
+  color: #9a97d3;
+}
+css pseudo-class {
+  color: #ffffff;
+}
+
+/* JS */
+js keyword.variable.language {
+  color: #ce54a9;
+}
+
+/* JSON */
+json x-assignment string.quoted {
+  color: #ce54a9;
+}
+
+/* PHP */
+embedded.php punctuation.brace, embedded.php punctuation.x-semicolon {
+  color: #ffffff;
+}
+embedded.php operator.logical {
+  color: #ce54a9;
+}
+embedded.php variable.function {
+  color: #ffffff;
+}
+embedded.php variable.function.method {
+  color: #7b99a1;
+}
